@@ -2,13 +2,13 @@
   margin-top: 50px;
   margin-bottom: 30px;
   color: white;
-  padding: 0 3vw; /* makes spacing responsive */
+  padding: 0 3vw; /* Responsive horizontal spacing */
 }
 
 .title-heading {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  padding-left: 5px; /* keeps aligned with cards */
+  padding-left: 5px; /* Aligns with cards */
 }
 
 .card-list {
@@ -30,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .card img {
@@ -50,4 +51,38 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    width: 180px;
+  }
+
+  .title-heading {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 140px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .title-heading {
+    font-size: 1rem;
+    padding-left: 2px;
+  }
+
+  .title-cards {
+    padding: 0 2vw;
+  }
 }
