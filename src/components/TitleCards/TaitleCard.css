@@ -1,0 +1,53 @@
+.title-cards {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: white;
+  padding: 0 3vw; /* makes spacing responsive */
+}
+
+.title-heading {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  padding-left: 5px; /* keeps aligned with cards */
+}
+
+.card-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-left: 5px;
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
